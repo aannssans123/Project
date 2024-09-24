@@ -23,7 +23,10 @@ body::after{
     z-index: -1;
     clip-path: circle(35% at right 70%);
     filter: blur(50px);
-    
+    animation-name: Move;
+    animation-duration: 1s;
+    animation-delay: 0.1s;
+    animation-timing-function: ease;
 }
 .container{
     width:80%;
@@ -120,5 +123,15 @@ nav ul li a:hover{
     }
     .content .image img{
         width:250px;
+    }
+}
+@keyframes Move{
+    0%{
+        background: rgb(0, 0, 0);
+        translate: 100px 90px;
+    }
+    100%{
+        translate: 0px 0px;
+        background: red;
     }
 }
