@@ -33,7 +33,7 @@ body::after{
     height:80%;
     background: rgba(255, 255, 255,0.1);
     border-radius: 30px;
-    overflow:hidden;
+    overflow: hidden;
 }
 nav{
     display: flex;
